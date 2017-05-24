@@ -14,7 +14,7 @@ class Integer{
 			return this->entero+rvalue;
 		}
 
-		double operator+(double rvalue){
+		double operator+ (double rvalue){
 			return this->entero+rvalue;
 		}
 
