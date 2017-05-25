@@ -16,7 +16,7 @@ string Casillas::getNombre(){
 	return nombre;
 }
 
-void Casillas::set(string name){
+void Casillas::setNombre(string name){
 	nombre = name;
 }
 

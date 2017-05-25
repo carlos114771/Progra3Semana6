@@ -4,7 +4,7 @@
 using namespace std;
 
 
-class Casillas(){
+class Casillas{
 	protected:
 		int posicion;
 		string nombre;
