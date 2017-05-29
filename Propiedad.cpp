@@ -37,6 +37,7 @@ double Propiedad::calcularRenta(bool todosColor){
 		retval=rentaNormal;
 		return retval;
 	}
+	return retval;
 }
 
 void Propiedad::vender(){
@@ -48,7 +49,7 @@ double Propiedad::getPrecio(){
 	return precio;
 }
 
-bool  Propiedad::Libre(){
+bool  Propiedad::estaLibre(){
 	libre=true;
 }
 int Propiedad::getCasas(){

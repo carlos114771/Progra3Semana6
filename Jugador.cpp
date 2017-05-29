@@ -1,6 +1,7 @@
 #include "Jugador.h"
 #include <string>
 
+
 using namespace std;
 
 Jugador::Jugador(){
@@ -30,6 +31,23 @@ double Jugador::getDinero(){
 	return dinero;
 }
 
+
+double Jugador::recibirDinero(double pdinero){
+	if (pdinero>0){
+		dinero=dinero+pdinero;
+	}
+	return dinero;
+}
+
+void Jugador::Pagar(double pagar){
+	if (pagar>0){
+		dinero=dinero-pagar;
+	}
+	this->dinero;
+}
+
+
+
 /*void Jugador::setDinero(double pdinero){
 	if(pdinero>0){
 		dinero=dinero+pdinero;
@@ -43,17 +61,3 @@ void Jugador::Pagar(double pagar){
 	}
 	return dinero;
 }*/
-
-void Jugador::setDinero(double pdinero){
-	if (pdinero>0){
-		dinero=dinero+pdinero;
-	}
-	this->dinero;
-}
-
-void Jugador::Pagar(double pagar){
-	if (pagar>0){
-		dinero=dinero-pagar;
-	}
-	this->dinero;
-}

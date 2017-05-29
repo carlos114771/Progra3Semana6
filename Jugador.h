@@ -2,7 +2,7 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 
-
+#include <fstream>
 #include <string>
 #include <vector>
 using namespace std;
@@ -21,13 +21,22 @@ class Jugador{
 		void setTurno(int);//t6
 		int getTurno();//t6
 		string getPieza();//t6
-		void  setPieza(string);
+		void setPieza(string);
 		void agregarCasillas(Casillas*);//t6
 
-		vector<Casillas*>&getCasillas();
+		vector<Casillas*>& getCasillas();
 		double getDinero();//t6
-		void setDinero(double);//t6
+		double recibirDinero(double);//t6
 		//double Pagar(double);
 		void Pagar(double);//t6
+
+		friend istream& operator>>(istream& in, Jugador& jugador){
+			in>>jugador.pieza;
+			in>>jugador.dinero;
+			in>>jugador.turno;
+
+			return in;
+
+		}
 };
 #endif

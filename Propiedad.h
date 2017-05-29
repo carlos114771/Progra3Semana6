@@ -36,11 +36,11 @@ class Propiedad: public Casillas{
 		//calcular la renta en base a si el jugador
 		//tiene todas las propiedades del mismo color
 		//y cantindad de casas y hoteles
-		double calcularRenta(double);
+		double calcularRenta(bool);
 		//marca la propiedad como que tiene dueño
 		void vender();
 		double getPrecio();//t6
-		bool libre();//t6
+		bool estaLibre();//t6
 		int getCasas();//t6
 		string getColor();//t6
 
