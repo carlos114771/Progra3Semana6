@@ -43,3 +43,18 @@ void Propiedad::vender(){
 	//implementar
 	libre=false;
 }
+
+double Propiedad::getPrecio(){
+	return precio;
+}
+
+bool  Propiedad::Libre(){
+	libre=true;
+}
+int Propiedad::getCasas(){
+	return casas;
+}
+
+string Propiedad::getColor(){
+	return color;
+}
