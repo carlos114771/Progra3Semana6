@@ -5,7 +5,7 @@
 using namespace std;
 
 Jugador::Jugador(){
-	turno=0;
+	//turno=0;
 	dinero =1500;
 }
 
@@ -43,7 +43,7 @@ void Jugador::Pagar(double pagar){
 	if (pagar>0){
 		dinero=dinero-pagar;
 	}
-	this->dinero;
+	
 }
 
 

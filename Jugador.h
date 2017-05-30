@@ -1,8 +1,8 @@
-#include "Casillas.h"
 #ifndef JUGADOR_H
 #define JUGADOR_H
+#include "Casillas.h"
 
-#include <fstream>
+#include <iostream>
 #include <string>
 #include <vector>
 using namespace std;

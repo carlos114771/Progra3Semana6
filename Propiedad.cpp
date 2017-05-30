@@ -4,6 +4,9 @@ using namespace std;
 
 Propiedad::Propiedad(){
 	libre=true;
+	casas=0;
+	hoteles=0;
+
 }
 
 string Propiedad::getTipo(){

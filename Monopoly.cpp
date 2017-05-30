@@ -14,21 +14,38 @@ int main(){
 
 	Jugador* player= new Jugador();
 
-	cin>>*player;
+	//cin>>*player;
 
-	cout<<player->getPieza()<<endl;
-	cout<<player->getTurno()<<endl;
+	//cout<<player->getPieza()<<endl;
+	//cout<<player->getTurno()<<endl;
 	//delete player;
 //prueba de archivos
-	ifstream file("jugadores.txt");
+	ifstream file("Jugadores.txt");
 	if(file.is_open()){
 		file>>*player;
+		file.close();
 
 	}
-	delete player;
-	cout<<"Pieza: "<<player->getPieza()<<endl;
-	cout<<"Dinero: "<<player->getDinero()<<endl;
+	//delete player;
+	Propiedad* uno;
+	Propiedad* dos;
+	uno=new Propiedad();
+	dos=new Propiedad();
+	ifstream casillasFile("Casillas.txt");
+	if(casillasFile.is_open()){
+		casillasFile>>*uno;
+		casillasFile>>*dos;
+		casillasFile.close();
+	}
 
+	cout<<uno->getNombre()<<endl<<uno->getColor()<<endl<<dos->getNombre()<<endl<<dos->getColor()<<endl;
+
+
+	//cout<<"Pieza: "<<player->getPieza()<<endl;
+	//cout<<"Dinero: "<<player->getDinero()<<endl;
+	delete player;
+	delete uno;
+	delete dos;
 
 	return 0;
 }

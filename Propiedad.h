@@ -1,5 +1,5 @@
 #include "Casillas.h"
-
+#include <iostream>
 #ifndef PROPIEDAD_H
 #define PROPIEDAD_H
 
@@ -27,6 +27,30 @@ class Propiedad: public Casillas{
 
 
 	public:
+		//sobrecargar operador
+		/*color, precio, renta normal, rentatodas, rentaunacasas... renta4casas
+			renta*/
+		friend istream& operator>>(istream& in, Propiedad& propiedad){
+			char buffer[256];
+			in.getline(buffer,256);
+			propiedad.nombre=buffer;
+			//in.getline(propiedad.nombre,256);
+			in>>propiedad.color;
+			in>>propiedad.precio;
+			in>>propiedad.rentaNormal;
+			in>>propiedad.rentaUnaCasa;
+			in>>propiedad.rentaDosCasas;
+			in>>propiedad.rentaTresCasas;
+			in>>propiedad.rentaCuatroCasas;
+			in>>propiedad.rentaHotel;
+			in>>propiedad.precioCasa;
+			in>>propiedad.precioHotel;
+
+			return in;
+
+		} 
+
+
 		//inicializa libre;
 		Propiedad();
 
@@ -68,3 +92,6 @@ class Propiedad: public Casillas{
 
 };
 #endif
+
+
+
