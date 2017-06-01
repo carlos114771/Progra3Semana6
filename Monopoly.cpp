@@ -1,6 +1,10 @@
 #include "Casillas.h"
 #include "Propiedad.h"
 #include "Jugador.h"
+#include "Juego.h"
+#include "Jugador.h"
+#include "Tablero.h"
+
 #include <iostream>
 #include <fstream>
 using namespace std;

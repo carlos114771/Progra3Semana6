@@ -45,7 +45,7 @@ class Propiedad: public Casillas{
 			in>>propiedad.rentaHotel;
 			in>>propiedad.precioCasa;
 			in>>propiedad.precioHotel;
-
+			in.ignore(1,'\n');
 			return in;
 
 		} 
