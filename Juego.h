@@ -20,7 +20,7 @@ class Juego{
 	public:
 		Juego();
 		~Juego();
-
+		int jugar();
 
 };
 

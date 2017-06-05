@@ -3,7 +3,6 @@
 #ifndef PROPIEDAD_H
 #define PROPIEDAD_H
 
-
 #include <string>
 using namespace std;
 
